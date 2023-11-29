@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+body {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar Starts Here */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav ul li a:hover {
+  color: #0075e9;
+}
+#cvd {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+#cvd:hover {
+  background-color: #0075e9;
+  color: #fff;
+}
+#hide_btn {
+  display: none;
+}
+
+/* Top Container Design Section */
+
+.container_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+#top_img {
+  width: 600px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.wd,
+.des {
+  font-weight: 700;
+}
+.top_p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.5;
+}
+.hire {
+  background-color: #0075e9;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  width: 100px;
+}
+.hire:active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  #hide_btn {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  nav ul {
+    display: none;
+  }
+  .container_top {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-top: 60px;
+  }
+  #top_img {
+    width: 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .container_top {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    margin-top: 80px;
+  }
+  #top_img {
+    width: 400px;
+  }
+}
