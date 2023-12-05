@@ -9,7 +9,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
   <link href="./output/tailwind.css" rel="stylesheet" />
-  <script src="script.js"></script>
   <title>Anas Ibn Belal</title>
   <link rel="stylesheet" href="style2.css" />
 </head>
@@ -188,34 +187,69 @@
 
   <!-- Get An Email Section starts Here -->
 
-  <div id="ctn" class="flex flex-row sm:flex-col lg:flex-row max-w-full h-60 sm:80 lg:h-60 mt-5 mb-0 shadow-xl bg-blue-700 justify-between items-center">
+  <div id="ctn"
+    class="flex flex-col lg:flex-row max-w-full w-full h-60 sm:h-screen lg:h-60 mt-5 mb-0 shadow-xl bg-blue-700 justify-evenly items-center sm:items-start lg:items-center">
 
-    <div class="flex flex-col justify-start px-20 py-16">
-        <h3 class="text-white text-left text-xl font-semibold mb-3 p-1 rounded-full">Contact Now</h3>
-        <a class="text-white font-medium" href="#"><i class="fa-solid fa-phone" style="color: #ffffff;margin: 6px;"></i>01987183320</a>
-        <a class="text-white font-medium" href="#"><i class="fa-solid fa-paper-plane" style="color: #ffffff;margin: 6px;"></i>anasibnebelal400@gmail.com</a>
-        <a class="text-white font-medium" href="#"><i class="fa-solid fa-location-dot" style="color: #ffffff;margin: 6px;"></i>Mirpur,Dhaka-1216</a>
-        <a class="text-white font-medium" href="#"><i class="fa-solid fa-link" style="color: #ffffff;margin: 6px;"></i>01987183320</a>
-        
+    <div class="flex flex-col justify-start pt-20 pl-4 sm:pl-20 py-16 sm:py-4">
+      <h3 class="text-white text-left text-xl font-semibold mb-3 p-1 rounded-full">Contact Now</h3>
+      <a class="text-white font-medium" href="#"><i class="fa-solid fa-phone"
+          style="color: #ffffff;margin: 6px;"></i>01987183320</a>
+      <a class="text-white font-medium" href="#"><i class="fa-solid fa-paper-plane"
+          style="color: #ffffff;margin: 6px;"></i>anasibnebelal400@gmail.com</a>
+      <a class="text-white font-medium" href="#"><i class="fa-solid fa-location-dot"
+          style="color: #ffffff;margin: 6px;"></i>Mirpur, Dhaka-1216</a>
+      <a class="text-white font-medium" href="#"><i class="fa-solid fa-link"
+          style="color: #ffffff;margin: 6px;"></i>01987183320</a>
     </div>
-    <div class="flex flex-col justify-start max-w-full w-2/5 px-20 py-10">
-      <h3 class="text-white text-left text-sm font-semibold mb-3 p-1 rounded-full">Subscribe Now</h3>
+
+    <div class="flex flex-col justify-start max-w-full w-full lg:w-2/5 px-4 sm:px-20 py-4 sm:py-10">
+      <h3 class="text-white text-left text-xl font-semibold mb-3 p-1 rounded-full">Subscribe Now</h3>
       <input
-        class="p-2.5 mb-4 font-light text-sm sm:text-xs w-full sm:w-1/2 lg:w-full transform rounded-sm hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+        class="p-2.5 mb-4 font-light text-sm sm:text-xs w-full transform rounded-sm hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
         type="email" name="email" id="mail" placeholder="Enter your email address">
-      <a class="relative top-4 left-2/4 -translate-x-2/4 -translate-y-2/4 tra max-w-full w-2/5 text-blue-700 bg-white text-center p-2 rounded-sm transform hover:bg-blue-700 hover:text-white hover:ease-out duration-500"
+      <a class="relative top-4 left-2/4 -translate-x-2/4 -translate-y-2/4 max-w-full w-full lg:w-2/5 text-blue-700 bg-white text-center p-2 rounded-sm transform hover:bg-blue-700 hover:text-white hover:ease-out duration-500 hover:border-4 hover:border-white"
         href="#">Subscribe</a>
-      
+    </div>
   </div>
 
-  </div>
 
 
   <!-- Footer Section Starts From Here -->
 
-  <div class="w-full h-64 mb-0 bg-gray-700">
+  <footer class="w-full h-72 mb-0 bg-gray-700 flex flex-row justify-around items-center p-20 gap-20">
 
-  </div>
+    <div class="flex flex-col justify-between items-start gap-3">
+      <h3 class="text-white font-bold">Important Links</h3>
+      <a class="text-white text-sm" href="#">Home</a>
+      <a class="text-white text-sm" href="#">About</a>
+      <a class="text-white text-sm" href="#">Contact</a>
+      <a class="text-white text-sm" href="#">Get a Quate</a>
+
+    </div>
+    <div class="flex flex-col justify-between items-start gap-3">
+      <h3 class="text-white font-bold">Privacy Policy</h3>
+      <a class="text-white text-sm" href="#">Personal Informations</a>
+      <a class="text-white text-sm" href="#">Using Personal Information</a>
+      <a class="text-white text-sm" href="#">Security of Personal Information</a>
+
+
+    </div>
+    <div class="flex flex-col justify-between items-start gap-3">
+      <h3 class="text-white text-sm font-bold">Social Media</h3>
+      <a class="text-white text-sm" href="#"><i class="fa-brands fa-facebook"
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Facebook</span></a>
+      <a class="text-white text-sm" href="#"><i class="fa-brands fa-youtube"
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Youtube</span></a>
+      <a class="text-white text-sm" href="#"><i class="fa-brands fa-github"
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Github</span></a>
+      <a class="text-white text-sm" href="#"><i class="fa-brands fa-instagram"
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Instagram</span></a>
+
+    </div>
+
+
+  </footer>
+  <script src="script.js"></script>
 
 
 </body>
