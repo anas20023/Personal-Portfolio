@@ -5,7 +5,7 @@
   font-family: poppins;
 }
 
-body {
+body , .go_center {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;

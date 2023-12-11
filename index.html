@@ -25,7 +25,7 @@
         <li><a href="#ctn">Contact</a></li>
       </ul>
       <a id="cvd" href="#" onclick="CV()">Download CV</a>
-      <div id="al_open"
+      <div id="not_av"
         class="hidden absolute right-0 top-0 w-96 h-20 px-8 py-6 bg-white shadow-xl transform translate-y-4 z-50">
         <h3 class="text-xl text-gray-800">CV is comming Soon<i class="fa-solid fa-xmark ml-8 cursor-pointer" id="close"
             onclick="Close_alt()"></i></h3>
@@ -37,7 +37,7 @@
         <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#abt">About Me</a>
         <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#pro">Projects</a>
         <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#ctn">Contact</a>
-        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" id="cvd" href="#" onclick="CV()">Download CV</a>
+        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" id="cfvd" href="#" onclick="CV()">Download CV</a>
 
       </div>
     </nav>
@@ -203,7 +203,7 @@
   <!-- Get An Email Section starts Here -->
 
   <div id="ctn"
-    class="flex flex-col h-screen lg:flex-row max-w-full w-full sm:h-screen lg:h-60 mt-5 mb-0 shadow-xl bg-blue-700 justify-evenly items-center sm:items-start lg:items-center">
+    class="flex flex-col h-screen lg:flex-row max-w-full w-full sm:h-screen lg:h-60 mt-5 mb-0 shadow-xl bg-blue-700 justify-between items-center sm:items-start lg:items-center">
 
     <div class="flex flex-col justify-start pt-20 pl-4 sm:pl-20 py-16 sm:py-4">
       <h3 class="text-white text-left text-xl font-semibold mb-3 p-1 rounded-full">Contact Now</h3>
@@ -216,49 +216,44 @@
       <a class="text-white font-medium" href="#"><i class="fa-solid fa-link"
           style="color: #ffffff;margin: 6px;"></i>01987183320</a>
     </div>
+    <iframe class="h-80 w-80 m-5 lg:h-56 lg:w-96" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1814.304574234027!2d89.92674844242437!3d24.568157472451833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDM0JzA2LjUiTiA4OcKwNTUnMzEuMyJF!5e0!3m2!1sen!2sbd!4v1702313481846!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <div class="flex flex-col justify-start max-w-full w-full lg:w-2/5 px-4 sm:px-20 py-4 sm:py-10">
-      <h3 class="text-white text-left text-xl font-semibold mb-3 p-1 rounded-full">Subscribe Now</h3>
-      <input
-        class="p-2.5 mb-4 font-light text-sm sm:text-xs w-full transform rounded-sm hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
-        type="email" name="email" id="mail" placeholder="Enter your email address">
-      <a class="relative top-4 left-2/4 -translate-x-2/4 -translate-y-2/4 max-w-full w-full lg:w-2/5 text-blue-700 bg-white text-center p-2 rounded-sm transform hover:bg-blue-700 hover:text-white hover:ease-out duration-500 hover:border-4 hover:border-white"
-        href="#">Subscribe</a>
-    </div>
+    
   </div>
 
 
 
   <!-- Footer Section Starts From Here -->
 
-  <footer class="w-full h-72 mb-0 bg-gray-700 flex flex-row justify-around items-center p-20 gap-20">
+  <footer class="w-full h-max mb-0 bg-gray-700 flex flex-col lg:flex-row justify-between items-center py-10 px-20 sm:py-20 gap-20">
 
     <div class="flex flex-col justify-between items-start gap-3">
-      <h3 class="text-white font-bold">Important Links</h3>
+      <h3 class="text-white font-bold">Navigation</h3>
       <a class="text-white text-sm" href="#">Home</a>
       <a class="text-white text-sm" href="#">About</a>
       <a class="text-white text-sm" href="#">Contact</a>
       <a class="text-white text-sm" href="#">Get a Quate</a>
 
     </div>
-    <div class="flex flex-col justify-between items-start gap-3">
-      <h3 class="text-white font-bold">Privacy Policy</h3>
-      <a class="text-white text-sm" href="#">Personal Informations</a>
-      <a class="text-white text-sm" href="#">Using Personal Information</a>
-      <a class="text-white text-sm" href="#">Security of Personal Information</a>
-
-
+    <div class="flex flex-col justify-start max-w-full w-full lg:w-2/5 px-4 sm:px-20 py-4 sm:py-10">
+      <h3 class="text-white text-center text-xl font-semibold mb-3 p-1 rounded-full">Subscribe Now</h3>
+      <input
+        class="p-2.5 mb-4 font-light text-sm sm:text-xs w-full transform rounded-sm hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+        type="email" name="email" id="mail" placeholder="Enter your email address">
+      <a class="relative top-4 left-2/4 -translate-x-2/4 -translate-y-2/4 max-w-full w-full lg:w-2/5 text-blue-700 bg-white text-center p-2 rounded-sm transform hover:bg-blue-700 hover:text-white hover:ease-out duration-500 hover:border-4 hover:border-white"
+        href="#">Subscribe</a>
     </div>
+  
     <div class="flex flex-col justify-between items-start gap-3">
-      <h3 class="text-white text-sm font-bold">Social Media</h3>
+      <h3 class="text-white text-base font-bold">Social Media</h3>
       <a class="text-white text-sm" href="#"><i class="fa-brands fa-facebook"
-          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Facebook</span></a>
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 lg:inline">Facebook</span></a>
       <a class="text-white text-sm" href="#"><i class="fa-brands fa-youtube"
-          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Youtube</span></a>
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 lg:inline">Youtube</span></a>
       <a class="text-white text-sm" href="#"><i class="fa-brands fa-github"
-          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Github</span></a>
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 lg:inline">Github</span></a>
       <a class="text-white text-sm" href="#"><i class="fa-brands fa-instagram"
-          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 hidden lg:inline">Instagram</span></a>
+          style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 lg:inline">Instagram</span></a>
 
     </div>
 
