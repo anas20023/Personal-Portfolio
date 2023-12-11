@@ -16,7 +16,7 @@
 <body>
   <header>
     <nav>
-      <a href="#" id="hide_btn" onblur="Hide_btn()" title="Menu"><i class="fa-solid fa-bars"
+      <a href="#" id="hide_btn" onclick="Hide_btn()" title="Menu"><i class="fa-solid fa-bars"
           style="color: #333333"></i></a>
       <ul id="show_btn">
         <li><a href="#">Home</a></li>
@@ -26,9 +26,19 @@
       </ul>
       <a id="cvd" href="#" onclick="CV()">Download CV</a>
       <div id="al_open"
-        class="hidden absolute right-0 top-0 w-96 h-20 px-8 py-6 bg-white shadow-xl transform translate-y-4">
+        class="hidden absolute right-0 top-0 w-96 h-20 px-8 py-6 bg-white shadow-xl transform translate-y-4 z-50">
         <h3 class="text-xl text-gray-800">CV is comming Soon<i class="fa-solid fa-xmark ml-8 cursor-pointer" id="close"
             onclick="Close_alt()"></i></h3>
+      </div>
+      <div id="covered"
+        class="bg-gray-800 text-white flex flex-col justify-start py-10 items-center h-screen w-96 absolute top-4 -left-full transform ease-in duration-100">
+        <i onclick="Showme()" class="relative cursor-pointer top-0.5 left-36 fa-solid fa-xmark" style="color: #ffffff;font-size: 18px;"></i>
+        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#">Home</a>
+        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#abt">About Me</a>
+        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#pro">Projects</a>
+        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#ctn">Contact</a>
+        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" id="cvd" href="#" onclick="CV()">Download CV</a>
+
       </div>
     </nav>
   </header>
