@@ -13,60 +13,51 @@
   <link rel="stylesheet" href="style2.css" />
 </head>
 
-<body>
+<body class="bg-white dark:bg-gray-800">
   <header>
-    <nav>
-      <a href="#" id="hide_btn" onclick="Hide_btn()" title="Menu"><i class="fa-solid fa-bars"
-          style="color: #333333"></i></a>
+    <nav class="bg-white dark:bg-gray-800">
+      <a href="#" id="hide_btn" onclick="Hide_btn()" title="Menu">
+        <i class="fa-solid fa-bars dark:text-white" style="color: #333333"></i>
+      </a>
       <ul id="show_btn">
-        <li><a class=" dark:text-blue-700" href="#">Home</a></li>
-        <li><a href="#abt">About Me</a></li>
-        <li><a href="#pro">Projects</a></li>
-        <li><a href="#ctn">Contact</a></li>
-        <li><a id="cvd" href="#" onclick="CV()">Download CV</a></li>
+        <li><a class="dark:text-white" href="#">Home</a></li>
+        <li><a class="dark:text-white" href="#abt">About Me</a></li>
+        <li><a class="dark:text-white" href="#pro">Projects</a></li>
+        <li><a class="dark:text-white" href="#ctn">Contact</a></li>
+        <li><a class="dark:text-white" id="cvd" href="#" onclick="CV()">Download CV</a></li>
       </ul>
-      <i id="darkmode" class="fa-solid fa-moon text-2xl text-gray-800 cursor-pointer"></i>
-      <i id="lightmode" class="fa-solid fa-sun text-2xl text-gray-800 cursor-pointer hidden"></i>
-      <div id="not_av"
-        class="hidden absolute right-0 top-0 w-96 h-20 px-8 py-6 bg-white shadow-lg hover:shadow-2xl transform translate-y-4 z-50">
-        <h3 class="text-xl text-gray-800">CV is comming Soon<i class="fa-solid fa-xmark ml-8 cursor-pointer" id="close"
-            onclick="Close_alt()"></i></h3>
+      <i id="g_darkmode" class="fa-solid fa-moon text-2xl text-gray-800 dark:text-white cursor-pointer"></i>
+      <i id="g_lightmode" class="fa-solid fa-sun text-2xl text-white dark:hidden cursor-pointer hidden"></i>
+      <div id="not_av" class="hidden absolute right-0 top-0 w-96 h-20 px-8 py-6 bg-white shadow-lg hover:shadow-2xl transform translate-y-4 z-50">
+        <h3 class="text-xl text-gray-800 dark:text-white">CV is coming Soon<i class="fa-solid fa-xmark ml-8 cursor-pointer" id="close" onclick="Close_alt()"></i></h3>
       </div>
-      <div id="covered"
-        class="z-40 bg-gray-800 text-white flex flex-col justify-start py-10 items-center h-screen w-96 absolute top-4 -left-full transform ease-in duration-100">
-        <i onclick="Showme()" class="relative cursor-pointer top-0.5 left-36 fa-solid fa-xmark"
-          style="color: #ffffff;font-size: 18px;"></i>
+      <div id="covered" class="z-40 bg-gray-800 text-white dark:bg-gray-900 dark:text-gray-100 flex flex-col justify-start py-10 items-center h-screen w-96 absolute top-4 -left-full transform ease-in duration-100">
+        <i onclick="Showme()" class="relative cursor-pointer top-0.5 left-36 fa-solid fa-xmark" style="color: #ffffff;font-size: 18px;"></i>
         <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#">Home</a>
         <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#abt">About Me</a>
         <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#pro">Projects</a>
         <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" href="#ctn">Contact</a>
-        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" id="cfvd" href="#"
-          onclick="CV()">Download CV</a>
-
+        <a class="m-2 p-2 text-white hover:text-blue-700 text-lg active:ring-2 ring-white" id="cfvd" href="#" onclick="CV()">Download CV</a>
       </div>
     </nav>
   </header>
-  <div class="container_top">
+  <div class="container_top bg-white dark:bg-gray-800">
     <div class="text">
-      <h1 class="text-left text-gray-700 font-semibold text-4xl">Hi, I'm Anas Ibn Belal</h1>
+      <h1 class="text-left text-gray-700 dark:text-white font-semibold text-4xl">Hi, I'm Anas Ibn Belal</h1>
       <p class="top_p">
-        I'm a <span class="wd">Web Developer</span> and
-        <span class="des">Designer</span> from Bangladesh. <br />I have a
-        passion for web design and love to create for web and mobile devices.
+        I'm a <span class="wd">Web Developer</span> and <span class="des">Designer</span> from Bangladesh. <br />I have a passion for web design and love to create for web and mobile devices.
       </p>
-      <a class="hire" href="#">Hire Me</a>
+      <a class="hire dark:bg-blue-700 dark:text-white" href="#">Hire Me</a>
     </div>
     <div class="img_div_top">
       <img id="top_img" src="./bg.png" alt="This is an Example Image" />
     </div>
   </div>
-
   <!-- Follow on Social Media Part -->
-  <h3 class="text-center font-semibold text-2xl text-gray-900 mt-12">
+  <h3 class="text-center font-semibold text-2xl text-gray-900 dark:text-white mt-12">
     Follow me
   </h3>
-  <div
-    class="flex w-80 justify-around align-middle bg-gray-100 text-cyan-950 mx-auto my-0 mt-5 rounded-lg p-5 lg:w-1/2">
+  <div class="flex w-80 justify-around align-middle bg-gray-100 dark:bg-gray-800 text-cyan-950 mx-auto my-0 mt-5 rounded-lg p-5 lg:w-1/2">
     <a href="https://www.facebook.com/anasib2000004/" target="_blank" rel="noopener">
       <div class="bg-white shadow-md mt-auto w-13 h-12 p-2.5 rounded-md transform hover:scale-110 duration-500">
         <i class="fa-brands fa-facebook" style="color: rgb(0, 90, 255); font-size: 30px"></i>
@@ -88,123 +79,75 @@
       </div>
     </a>
   </div>
-
   <!-- About me Sections Started Here -->
-
   <section id="abt" class="sm:flex-row lg:flex justify-between align-middle max-w-full h-screen mt-20 p-10">
-
     <div class="sm:flex mt-2 lg:mt-20 flex justify-center align-middle">
       <div class="img_d w-40 h-40 lg:w-96 lg:h-96 shadow-2xl">
-        <img class="w-40 h-40 lg:w-96 lg:h-96 rounded-full img_r transform hover:scale-90 duration-500" src="./anas.jpg"
-          alt="This is an Example Image" />
+        <img class="w-40 h-40 lg:w-96 lg:h-96 rounded-full img_r transform hover:scale-90 duration-500" src="./anas.jpg" alt="This is an Example Image" />
       </div>
     </div>
-
     <div class="flex-row justify-center align-middle">
-      <h2
-        class="text-center mt-5 font-bold sm:font-medium text-xl sm:text-center sm:mt-8 sm:text-2xl lg:text-left lg:text-5xl ">
-        About Me</h2>
-      <p class="mt-10 text-sm">
-      <ul class="list-disc">
-        <li class="font-bold">
-          Student of Computer Science and Engineering (CSE) at
-        </li>
-        <li class="font-semibold">
-          Bangladesh University of Business and Technology
-        </li>
-        <li class="font-medium">
-          2nd Semester
-        </li>
-
-      </ul>
-
+      <h2 class="text-center mt-5 font-bold sm:font-medium text-xl sm:text-center sm:mt-8 sm:text-2xl lg:text-left lg:text-5xl dark:text-white">
+        About Me
+      </h2>
+      <p class="mt-10 text-sm dark:text-white">
+        <ul class="list-disc">
+          <li class="font-bold">Student of Computer Science and Engineering (CSE) at</li>
+          <li class="font-semibold">Bangladesh University of Business and Technology</li>
+          <li class="font-medium">2nd Semester</li>
+        </ul>
       </p>
-      <h3 class="text-center mt-10 text-xl font-semibold">My Skils</h3>
-      <div class="flex justify-between mt-5 p-8 h-20 w-full bg-white">
+      <h3 class="text-center mt-10 text-xl font-semibold dark:text-white">My Skills</h3>
+      <div class="flex justify-between mt-5 p-8 h-20 w-full bg-white dark:bg-gray-800 dark:text-white">
         <div class="flex justify-center align-middle rounded-md w-9 h-10 text-center font-semibold">
-          <i class="fa-brands fa-html5 transform hover:scale-110 duration-500"
-            style="color: #ff0000; font-size: 70px"></i>
+          <i class="fa-brands fa-html5 transform hover:scale-110 duration-500" style="color: #ff0000; font-size: 70px"></i>
         </div>
         <div class="flex justify-center align-middle rounded-md w-9 h-10 text-center font-semibold">
-          <i class="fa-brands fa-css3-alt transform hover:scale-110 duration-500"
-            style="color: #005eff; font-size: 70px"></i>
+          <i class="fa-brands fa-css3-alt transform hover:scale-110 duration-500" style="color: #005eff; font-size: 70px"></i>
         </div>
         <div class="flex justify-center align-middle rounded-md w-9 h-10 text-center font-semibold">
           <i class="fa-brands fa-js transform hover:scale-110 duration-500" style="color: #ffc800; font-size: 70px"></i>
         </div>
       </div>
-      <div class="flex justify-between mt-5 p-8 h-20 w-full bg-white">
+      <div class="flex justify-between mt-5 p-8 h-20 w-full bg-white dark:bg-gray-800 dark:text-white">
         <div class="flex justify-center align-middle rounded-md w-9 h-10 text-center font-semibold">
-          <i class="fa-brands fa-bootstrap transform hover:scale-110 duration-500"
-            style="color: #4e00c2; font-size: 70px"></i>
+          <i class="fa-brands fa-bootstrap transform hover:scale-110 duration-500" style="color: #4e00c2; font-size: 70px"></i>
         </div>
         <div class="flex justify-center align-middle rounded-md w-9 h-10 text-center font-semibold">
-          <i class="lni lni-tailwindcss transform hover:scale-110 duration-500"
-            style="font-size: 70px; color: #005eff;"></i>
+          <i class="lni lni-tailwindcss transform hover:scale-110 duration-500" style="font-size: 70px; color: #005eff;"></i>
         </div>
         <div class="flex justify-center align-middle rounded-md w-9 h-10 text-center font-semibold">
-          <i class="fa-brands fa-react transform hover:scale-110 duration-500"
-            style="color: #18cc00; font-size: 70px"></i>
+          <i class="fa-brands fa-react transform hover:scale-110 duration-500" style="color: #18cc00; font-size: 70px"></i>
         </div>
       </div>
     </div>
   </section>
-
   <!-- Portfolio Section Starts Here -->
-
-
-  <section id="pro"
-    class="h-full mt-20 flex-col sm:h-full sm:mt-20 lg:mt-20 flex justify-center sm:flex-col items-center py-10 gap-10">
-
-    <h2 class="text-center mb-20  text-gray-700 text-4xl font-semibold">Recent Projects</h2>
-
+  <section id="pro" class="h-full mt-20 flex-col sm:h-full sm:mt-20 lg:mt-20 flex justify-center sm:flex-col items-center py-10 gap-10">
+    <h2 class="text-center mb-20 text-gray-700 text-4xl font-semibold dark:text-white">Recent Projects</h2>
     <div class="flex flex-col sm:flex-col lg:flex-row lg:justify-between justify-center items-center gap-10">
-      <div
-        class="w-96 h-96 flex-row justify-center align-middle bg-white shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
-        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_1.png"
-          alt="This is an Example Image" />
+      <div class="w-96 h-96 flex-row justify-center align-middle bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
+        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_1.png" alt="This is an Example Image" />
         <div class="flex justify-evenly align-middle px-10">
-          <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
-            href="https://anas20023.github.io/Codes/" target="_blank"><i class="fa-solid fa-play"
-              style="color: #ffffff; margin: 5px;"></i>Preview</a>
-          <a rel="noopener" class="bg-gray-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
-            href="https://github.com/anas20023/Codes" target="_blank"><i class="fa-solid fa-code"
-              style="color: #ffffff; margin: 5px;"></i>Source
-            Code</a>
+          <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm transform hover:scale-105 duration-500" href="https://anas20023.github.io/Codes/" target="_blank"><i class="fa-solid fa-play" style="color: #ffffff; margin: 5px;"></i>Preview</a>
+          <a rel="noopener" class="bg-gray-600 text-white p-2 rounded-sm transform hover:scale-105 duration-500" href="https://github.com/anas20023/Codes" target="_blank"><i class="fa-solid fa-code" style="color: #ffffff; margin: 5px;"></i>Source Code</a>
         </div>
       </div>
-      <div
-        class="w-96 h-96 flex-row justify-center align-middle bg-white shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
-        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_2.png"
-          alt="This is an Example Image" />
+      <div class="w-96 h-96 flex-row justify-center align-middle bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
+        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_2.png" alt="This is an Example Image" />
         <div class="flex justify-evenly align-middle px-10">
-          <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
-            href="https://anas20023.github.io/E-Commerce-Site/" target="_blank"><i class="fa-solid fa-play"
-              style="color: #ffffff; margin: 5px;"></i>Preview</a>
-          <a rel="noopener" class="bg-gray-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
-            href="https://github.com/anas20023/E-Commerce-Site" target="_blank"><i class="fa-solid fa-code"
-              style="color: #ffffff; margin: 5px;"></i>Source
-            Code</a>
+          <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm transform hover:scale-105 duration-500" href="https://anas20023.github.io/E-Commerce-Site/" target="_blank"><i class="fa-solid fa-play" style="color: #ffffff; margin: 5px;"></i>Preview</a>
+          <a rel="noopener" class="bg-gray-600 text-white p-2 rounded-sm transform hover:scale-105 duration-500" href="https://github.com/anas20023/E-Commerce-Site" target="_blank"><i class="fa-solid fa-code" style="color: #ffffff; margin: 5px;"></i>Source Code</a>
         </div>
       </div>
-      <div
-        class="w-96 h-96 flex-row justify-center align-middle bg-white shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
-        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_3.png"
-          alt="This is an Example Image" />
+      <div class="w-96 h-96 flex-row justify-center align-middle bg-white dark:bg-gray-800 shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
+        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_3.png" alt="This is an Example Image" />
         <div class="flex justify-evenly align-middle px-10">
-          <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
-            href="https://anas20023.github.io/Quran_Reading_Website/" target="_blank"><i class="fa-solid fa-play"
-              style="color: #ffffff; margin: 5px;"></i>Preview</a>
-          <a rel="noopener" class="bg-gray-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
-            href="https://github.com/anas20023/Quran_Reading_Website" target="_blank"><i class="fa-solid fa-code"
-              style="color: #ffffff; margin: 5px;"></i>Source
-            Code</a>
+          <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm transform hover:scale-105 duration-500" href="https://anas20023.github.io/Quran_Reading_Website/" target="_blank"><i class="fa-solid fa-play" style="color: #ffffff; margin: 5px;"></i>Preview</a>
+          <a rel="noopener" class="bg-gray-600 text-white p-2 rounded-sm transform hover:scale-105 duration-500" href="https://github.com/anas20023/Quran_Reading_Website" target="_blank"><i class="fa-solid fa-code" style="color: #ffffff; margin: 5px;"></i>Source Code</a>
         </div>
       </div>
-
     </div>
-
-
   </section>
 
   <!-- Get An Email Section starts Here -->
