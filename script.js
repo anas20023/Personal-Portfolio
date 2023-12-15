@@ -26,18 +26,18 @@ function Showme() {
 
 // Dark Mode /// Light Mode
 
-let toogle = document.querySelector("#g_darkmode");
-let r_toogle = document.querySelector("#g_lightmode");
+// let toogle = document.querySelector("#g_darkmode");
+// let r_toogle = document.querySelector("#g_lightmode");
 
-toogle.addEventListener("click", () => {
-  document.documentElement.classList.add("dark");
-  document.getElementById("mainbody").style.backgroundColor="#333"
-  toogle.classList.add("hidden");
-  r_toogle.classList.remove("hidden");
-});
-r_toogle.addEventListener("click", () => {
-  document.documentElement.classList.remove("dark");
-  document.getElementById("mainbody").style.backgroundColor="#fff"
-  toogle.classList.remove("hidden");
-  r_toogle.classList.add("hidden");
-});
+// toogle.addEventListener("click", () => {
+//   document.documentElement.classList.add("dark");
+//   document.getElementById("mainbody").style.backgroundColor="#333"
+//   toogle.classList.add("hidden");
+//   r_toogle.classList.remove("hidden");
+// });
+// r_toogle.addEventListener("click", () => {
+//   document.documentElement.classList.remove("dark");
+//   document.getElementById("mainbody").style.backgroundColor="#fff"
+//   toogle.classList.remove("hidden");
+//   r_toogle.classList.add("hidden");
+// });
