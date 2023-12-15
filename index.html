@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,12 +19,14 @@
       <a href="#" id="hide_btn" onclick="Hide_btn()" title="Menu"><i class="fa-solid fa-bars"
           style="color: #333333"></i></a>
       <ul id="show_btn">
-        <li><a href="#">Home</a></li>
+        <li><a class=" dark:text-blue-700" href="#">Home</a></li>
         <li><a href="#abt">About Me</a></li>
         <li><a href="#pro">Projects</a></li>
         <li><a href="#ctn">Contact</a></li>
+        <li><a id="cvd" href="#" onclick="CV()">Download CV</a></li>
       </ul>
-      <a id="cvd" href="#" onclick="CV()">Download CV</a>
+      <i id="darkmode" class="fa-solid fa-moon text-2xl text-gray-800 cursor-pointer"></i>
+      <i id="lightmode" class="fa-solid fa-sun text-2xl text-gray-800 cursor-pointer hidden"></i>
       <div id="not_av"
         class="hidden absolute right-0 top-0 w-96 h-20 px-8 py-6 bg-white shadow-lg hover:shadow-2xl transform translate-y-4 z-50">
         <h3 class="text-xl text-gray-800">CV is comming Soon<i class="fa-solid fa-xmark ml-8 cursor-pointer" id="close"
@@ -159,7 +161,8 @@
     <div class="flex flex-col sm:flex-col lg:flex-row lg:justify-between justify-center items-center gap-10">
       <div
         class="w-96 h-96 flex-row justify-center align-middle bg-white shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
-        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_1.png" alt="This is an Example Image" />
+        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_1.png"
+          alt="This is an Example Image" />
         <div class="flex justify-evenly align-middle px-10">
           <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
             href="https://anas20023.github.io/Codes/" target="_blank"><i class="fa-solid fa-play"
@@ -172,7 +175,8 @@
       </div>
       <div
         class="w-96 h-96 flex-row justify-center align-middle bg-white shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
-        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_2.png" alt="This is an Example Image" />
+        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_2.png"
+          alt="This is an Example Image" />
         <div class="flex justify-evenly align-middle px-10">
           <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
             href="https://anas20023.github.io/E-Commerce-Site/" target="_blank"><i class="fa-solid fa-play"
@@ -185,7 +189,8 @@
       </div>
       <div
         class="w-96 h-96 flex-row justify-center align-middle bg-white shadow-lg hover:shadow-2xl transform hover:scale-104 duration-500">
-        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_3.png" alt="This is an Example Image" />
+        <img class="max-h-80 max-w-80 object-cover transform hover:scale-90 duration-500" src="./p_3.png"
+          alt="This is an Example Image" />
         <div class="flex justify-evenly align-middle px-10">
           <a rel="noopener" class="bg-blue-600 text-white p-2 rounded-sm  transform hover:scale-105 duration-500"
             href="https://anas20023.github.io/Quran_Reading_Website/" target="_blank"><i class="fa-solid fa-play"
@@ -218,7 +223,10 @@
       <a class="text-white font-medium" href="#"><i class="fa-solid fa-link"
           style="color: #ffffff;margin: 6px;"></i>01987183320</a>
     </div>
-      <iframe class="h-80 w-80 m-5 lg:h-56 lg:w-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.189886646555!2d90.35234972844425!3d23.811845832136704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12015382851%3A0x3ceca92fcf1a72d2!2sBangladesh%20University%20of%20Business%20and%20Technology%20(BUBT)!5e0!3m2!1sen!2sbd!4v1702327184643!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="h-80 w-80 m-5 lg:h-56 lg:w-96"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.189886646555!2d90.35234972844425!3d23.811845832136704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c12015382851%3A0x3ceca92fcf1a72d2!2sBangladesh%20University%20of%20Business%20and%20Technology%20(BUBT)!5e0!3m2!1sen!2sbd!4v1702327184643!5m2!1sen!2sbd"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
   </div>
@@ -238,14 +246,7 @@
       <a class="text-white text-sm" href="#">Get a Quate</a>
 
     </div>
-    <div class="flex flex-col justify-start max-w-full w-full lg:w-2/5  py-4 sm:py-10">
-      <h3 class="text-white text-left text-xl font-semibold mb-3 p-1 rounded-full">Subscribe Now</h3>
-      <input
-        class="p-2.5 mb-4 font-light text-sm sm:text-xs w-full transform rounded-sm hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
-        type="email" name="email" id="mail" placeholder="Enter your email address">
-      <a class="relative top-4 left-2/4 -translate-x-2/4 -translate-y-2/4 max-w-full w-full lg:w-2/5 text-blue-700 bg-white text-center p-2 rounded-sm transform hover:bg-blue-700 hover:text-white hover:ease-out duration-500 hover:border-4 hover:border-white"
-        href="#">Subscribe</a>
-    </div>
+
 
     <div class="flex flex-col justify-between items-start gap-3">
       <h3 class="text-white text-base font-bold">Social Media</h3>
@@ -258,6 +259,14 @@
       <a class="text-white text-sm" href="#"><i class="fa-brands fa-instagram"
           style="color: #ffffff;font-size: 18px;"></i><span class="ml-4 lg:inline">Instagram</span></a>
 
+    </div>
+    <div class="flex flex-col justify-start max-w-full w-full lg:w-2/5  py-4 sm:py-10">
+      <h3 class="text-white text-left text-xl font-semibold mb-3 p-1 rounded-full">Subscribe Now</h3>
+      <input
+        class="p-2.5 mb-4 font-light text-sm sm:text-xs w-full transform rounded-sm hover:ring-violet-300 focus:outline-none focus:ring focus:ring-violet-600"
+        type="email" name="email" id="mail" placeholder="Enter your email address">
+      <a class="relative top-4 left-2/4 -translate-x-2/4 -translate-y-2/4 max-w-full w-full lg:w-2/5 text-blue-700 bg-white text-center p-2 rounded-sm transform hover:bg-blue-700 hover:text-white hover:ease-out duration-500 hover:border-4 hover:border-white"
+        href="#">Subscribe</a>
     </div>
 
 

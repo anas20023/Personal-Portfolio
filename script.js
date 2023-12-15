@@ -23,3 +23,10 @@ function Showme() {
   hide.classList.remove("left-0");
   hide.classList.add("-left-full");
 }
+
+// Dark Mode /// Light Mode
+
+let toogle = document.querySelector("#darkmode");
+toogle.addEventListener("click", () => {
+  document.documentElement.classList.add("dark");
+});

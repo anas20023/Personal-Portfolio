@@ -7,6 +7,7 @@
     "no-inline-styles": "off",
     "compat-api/html": "off",
     "axe/text-alternatives": "off",
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "axe/parsing": "off"
   }
 }
